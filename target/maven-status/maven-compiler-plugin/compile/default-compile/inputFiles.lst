@@ -1,0 +1,13 @@
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\DAL\Interface\Context\IFriendChatContext.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\Model\MyFriendChat.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\Factory\FriendChatFactory.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\Logic\FriendChatLogic.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\DAL\Context\FriendChatContextSQL.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\DAL\Interface\Repository\IFriendChatRepository.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\Logic\Security\AudienceValidator.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\FriendChatApplication.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\Model\FriendChat.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\Logic\Resource\FriendChatResource.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\DAL\Repository\FriendChatRepository.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\Logic\Security\WebSecurityConfig.java
+C:\Users\Joost\Documents\GitHub\Juicedms_FriendChat\src\main\java\com\Herwaarden\FriendChat\Model\FriendsChat.java
