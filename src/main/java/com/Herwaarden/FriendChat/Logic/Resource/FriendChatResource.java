@@ -20,7 +20,7 @@ public class FriendChatResource {
     private RestTemplate restTemplate;
 
     @CrossOrigin(origins = {"http://localhost:9000","http://217.101.44.31:9000"})
-    @GetMapping("chats/get/{userId}")
+    @GetMapping("chats/{userId}")
     public List<MyFriendChat> getMyFriendChat(@PathVariable("userId") int userId){
         FriendChatLogic friendChatLogic = new FriendChatLogic();
 
@@ -29,7 +29,7 @@ public class FriendChatResource {
 
     //Example body JSON: "{"senderId": "1", "receiverId": "2", "message": "hi there!"}"
     @CrossOrigin(origins = {"http://localhost:9000","http://217.101.44.31:9000"})
-    @PostMapping("chats/get/")
+    @PostMapping("chat/get/")
     public void postTest(@RequestBody FriendChat friendChat){
         System.out.println(friendChat.getMessage());
         System.out.println(friendChat.getReceiverId());
