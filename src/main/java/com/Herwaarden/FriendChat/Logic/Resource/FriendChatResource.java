@@ -3,6 +3,7 @@ package com.Herwaarden.FriendChat.Logic.Resource;
 import com.Herwaarden.FriendChat.Logic.FriendChatLogic;
 import com.Herwaarden.FriendChat.Model.FriendChat;
 import com.Herwaarden.FriendChat.Model.MyFriendChat;
+import com.Herwaarden.FriendChat.Model.MyFriendChats;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -21,10 +22,16 @@ public class FriendChatResource {
 
     @CrossOrigin(origins = {"http://localhost:9000","http://217.101.44.31:9000"})
     @GetMapping("chats/{userId}")
-    public List<MyFriendChat> getMyFriendChat(@PathVariable("userId") int userId){
+    public MyFriendChats getMyFriendChat(@PathVariable("userId") int userId){
         FriendChatLogic friendChatLogic = new FriendChatLogic();
 
-        return friendChatLogic.getChatsByUserId(userId);
+        MyFriendChats myFriendChats = new MyFriendChats();
+
+        for(MyFriendChat myFriendChat : friendChatLogic.getChatsByUserId(userId)){
+            myFriendChats.getFriendChatList().add(myFriendChat);
+        }
+
+        return myFriendChats;
     }
 
     //Example body JSON: "{"senderId": "1", "receiverId": "2", "message": "hi there!"}"
